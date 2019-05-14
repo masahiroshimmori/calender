@@ -12,9 +12,9 @@ if(isset($_GET['ym'])){
 
 //タイムスタンプを作成し、フォーマットをチェックする
 $timestamp = strtotime($ym . '-01');
-if($timestamp === false){
-  $ym = date('Y-m');
-  $timestamp = strtotime($ym . '-01');
+if ($timestamp === false) {
+    $ym = date('Y-m');
+    $timestamp = strtotime($ym . '-01');
 }
 
 //今日の日付フォーマット
